@@ -1,6 +1,6 @@
-# view
+# view-default
 
-> My remarkable Nuxt.js project
+> My solid Nuxt.js project
 
 ## Build Setup
 

@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        view
+        view-default
       </h1>
       <h2 class="subtitle">
-        My remarkable Nuxt.js project
+        My solid Nuxt.js project
       </h2>
       <div class="links">
         <a

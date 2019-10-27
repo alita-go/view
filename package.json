@@ -1,8 +1,8 @@
 {
-  "name": "view",
+  "name": "view-default",
   "version": "1.0.0",
-  "description": "My remarkable Nuxt.js project",
-  "author": "lisniuse",
+  "description": "My solid Nuxt.js project",
+  "author": "zhibing",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -11,7 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "ant-design-vue": "^1.1.10"
   },
   "devDependencies": {}
 }
