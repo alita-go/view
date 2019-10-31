@@ -15,7 +15,7 @@
             <a :href="community.link" class="block_nav_link">{{community.title}}</a>
           </div>
           <div class="block_nav" v-for="(page, index) in pages" :key="index">
-            <a href="/community/servicemarket" class="block_nav_link">{{page.title}}</a>
+            <a :href="page.link" class="block_nav_link">{{page.title}}</a>
           </div>
         </div>
         <!-- 移动端 -->
@@ -196,7 +196,7 @@
         </div>
       </div>
     </div>
-    <div check-reduce class="block_nav_wrp">
+    <div check-reduce class="block_nav_wrp" v-if="isShowTopic">
       <div class="block_nav_wrp_cont">
         <ul class="block_navs">
           <li class="block_nav" :class="{'selected': index === 0}" v-for="(item, index) in topic" :key="index">
@@ -215,6 +215,10 @@ export default {
     title: {
       type: String,
       default: 'test'
+    },
+    isShowTopic: {
+      type: Boolean,
+      default: true
     }
   },
   
@@ -225,14 +229,14 @@ export default {
       },
       pages: [
         {
-          title: '中文文档',
+          title: '文档中心',
           self: false,
-          link: '/'
+          link: '/docs'
         },
         {
           title: '演练场',
           self: false,
-          link: '/'
+          link: '/playground'
         }
       ],
       topic: [
@@ -256,6 +260,13 @@ export default {
           id: 'matplotlib',
           self: true,
           link: '/matplotlib'
+        },
+        {
+          enName: 'seaborn',
+          cnName: 'seaborn',
+          id: 'seaborn',
+          self: true,
+          link: '/seaborn'
         },
         {
           enName: 'TensorFlow',

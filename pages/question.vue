@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="app_container app">
     <common-header :title="title" />
-    <forum/>
+    <question/>
     <common-footer />
   </div>
 </template>
@@ -12,13 +12,13 @@
  */
 import commonHeader from '@/components/common/Header'
 import commonFooter from '@/components/common/Footer'
-import Forum from '@/components/Forum'
+import Question from '@/components/Question'
 
 export default {
   components: {
     commonHeader,
     commonFooter,
-    Forum
+    Question
   },
 
   data() {
